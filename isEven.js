@@ -52,8 +52,8 @@ console.log(avg)
 // 8)The == operator compares objects by identity. But sometimes you would prefere to compare the values of their actual properties
 // write a function deepEqual that takes 2 values and returns true if only they are of the same value or are objects with the same property.
 function deepEqual (d, e) {
-  if (d === e) {     
-     true
+  if (d === e) {    
+    return true
   }
   if (typeof d === 'object' && d !== 0 && typeof e === 'object' && e !== 0) {
     return true
