@@ -4,8 +4,7 @@
 function isEven (p) {
   if (p % 2 === 0) {
     console.log(p + ' is even')
-  } 
- else {
+  } else {
     console.log(p + ' is odd')
   } 
 }
