@@ -6,7 +6,7 @@ function isEven (p) {
     console.log(p + ' is even')
   } else {
     console.log(p + ' is odd')
-  } 
+  }
 }
 isEven(3)
 
@@ -28,7 +28,7 @@ let counter = 0
 function countChar (string, character) {
   for (let k = 0; k < string.length; k++) {
     if (string[k] === character) {
-        counter += 1
+      counter += 1
     }
   }
   return counter
