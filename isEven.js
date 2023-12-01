@@ -16,11 +16,11 @@ isEven(2)
 // 3) function countChar that behaves like countBs expect it takes a second argument that indicates the character that is to be  counted
 // 4) function to generate the first n fibonacci numbers (fib=sum of the first 2 previous numbers)
 function fibonacci (n) {
-const fibonacci = [0, 1]
+  const fibonacci = [0, 1]
   for (let i = 2; i < n; i++) {
     fibonacci[i] = fibonacci[i - 1] + fibonacci[i - 2]
   }
-  return fibonacci.slice (0, n)
+  return fibonacci.slice(0, n)
 }
 console.log(fibonacci(5))
 
@@ -29,7 +29,7 @@ console.log(fibonacci(5))
 function sum (num) {
   let sum = 0
   for (let c = 0; c < num.length; c++) {
-    sum += num[c];
+    sum += num[c]
   }
   return sum
 }
@@ -43,7 +43,7 @@ function calculateAverage (numbers) {
     sum += numbers[b]
   }
   const average = sum / numbers.length
-  return average;
+  return average
 }
 const arrayOfNumbers = [1, 2, 3, 4, 5]
 const avg = calculateAverage(arrayOfNumbers)
