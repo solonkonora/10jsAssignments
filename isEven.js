@@ -23,7 +23,6 @@ function countBs (string) {
 console.log(countBs('baBeByBoBUbbbBBBb'))
 
 // 3) function countChar that behaves like countBs expect it takes a second argument that indicates the character that is to be  counted
-// let counter = j, k
 let counter = 0
 function countChar (string, character) {
   for (let k = 0; k < string.length; k++) {
@@ -71,6 +70,21 @@ console.log(stepRange(1, 10, 2))
 // trueRange(1, 5) => [1, 2, 3, 4, 5]
 // trueRange(1, 10, 2) => [1, 3, 5, 7, 9]
 // trueRange(5, 2, -1) => [5, 4, 3, 2]
+function trueRange (starting, ending, step = 1) {
+  const result = []
+  if (step > 0) {
+    for (let w = starting; w <= ending; w += step) {
+        result.push(w)
+    }
+  }  
+  if (step < 0) {
+    for (let w = starting; w >= ending; w += step) {
+      result.push(w)
+    }
+}
+return result
+}
+console.log(trueRange(5, 2, -1));
 
 // 8)sum function that takes an array and returns the sum of its elements
 // sum([1,2,3,4,5]) => 15
