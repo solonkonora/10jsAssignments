@@ -45,14 +45,14 @@ function fibonacci (n) {
 console.log(fibonacci(10))
 
 // 5)function range that takes 2 arguments start and end and returns an array containing all the numbers from start up to end
-function range(start, end) {
-  let newArray = [];
+function range (start, end) {
+  const newArray = []
   for (let l = start; l <= end; l++) {
-    newArray.push(l);
+    newArray.push(l)
   }
-  return newArray;
+  return newArray
 }
-console.log(range(1, 10));
+console.log(range(1, 10))
 
 // 6)write stepRange that acts like range but takes an extra increment or decrement parameter
 // stepRange(1, 10, 2) => [1,3,5,7,9]
@@ -74,17 +74,17 @@ function trueRange (starting, ending, step = 1) {
   const result = []
   if (step > 0) {
     for (let w = starting; w <= ending; w += step) {
-        result.push(w)
+      result.push(w)
     }
-  }  
+  }
   if (step < 0) {
     for (let w = starting; w >= ending; w += step) {
       result.push(w)
     }
+  }
+  return result
 }
-return result
-}
-console.log(trueRange(5, 2, -1));
+console.log(trueRange(5, 2, -1))
 
 // 8)sum function that takes an array and returns the sum of its elements
 // sum([1,2,3,4,5]) => 15
