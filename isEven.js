@@ -13,18 +13,31 @@ isEven(2)
 // // 2) Write a function called countBs that takes a string as its only argument and returns a number that indicates how many uppercase "B" characters are in the string
 // function countBs (string) {
 // }
+// 3) function countChar that behaves like countBs expect it takes a second argument that indicates the character that is to be  counted
+
+
+//6)sum function that takes an array and returns the sum of its elements
+//sum([1,2,3,4,5]) => 15
+function sum (num) {
+    let sum = 0
+    for (let i = 0; i < num.length; i++) {
+        sum += num[i];
+    }
+    return sum
+}
+console.log(sum([1,2,3,4,5]))
 
 //7)Write a function to return the average of an array
 //average([1,2,3,4,5]) => 3
-function calculateAverage(numbers) {
-    let sum = 0
-    for (let i = 0; i < numbers.length; i++) {
-        sum += numbers[i]
-    }
-    const average = sum / numbers.length
-    return average;
-}
-const arrayOfNumbers = [1, 2, 3, 4, 5]
-const avg = calculateAverage(arrayOfNumbers)
-console.log(avg)
+// function calculateAverage(numbers) {
+//     let sum = 0
+//     for (let i = 0; i < numbers.length; i++) {
+//         sum += numbers[i]
+//     }
+//     const average = sum / numbers.length
+//     return average;
+// }
+// const arrayOfNumbers = [1, 2, 3, 4, 5]
+// const avg = calculateAverage(arrayOfNumbers)
+// console.log(avg)
 
