@@ -49,15 +49,15 @@ const arrayOfNumbers = [1, 2, 3, 4, 5]
 const avg = calculateAverage(arrayOfNumbers)
 console.log(avg)
 
-//8)The == operator compares objects by identity. But sometimes you would prefere to compare the values of their actual properties
-//write a function deepEqual that takes 2 values and returns true if only they are of the same value or are objects with the same property.
+// 8)The == operator compares objects by identity. But sometimes you would prefere to compare the values of their actual properties
+// write a function deepEqual that takes 2 values and returns true if only they are of the same value or are objects with the same property.
 function deepEqual (d, e) {
-  if (d === e ) {     
-    return true
-  } 
-  if (typeof d === 'object' && value != 0 && typeof e === 'object' && value != 0) {
+  if (d === e) {     
+     true
+  }
+  if (typeof d === 'object' && d !== 0 && typeof e === 'object' && e !== 0) {
     return true
   }
-    return false
+  return false
 }
-console.log(deepEqual(1, "1"))
+console.log(deepEqual(1, '1'))
