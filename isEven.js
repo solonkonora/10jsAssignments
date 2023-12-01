@@ -11,9 +11,23 @@ function isEven (p) {
 isEven(2)
 
 // 2) Write a function called countBs that takes a string as its only argument and returns a number that indicates how many uppercase "B" characters are in the string
-// function countBs (string) {
-// }
+let count = 0
+function countBs (string) {
+  for (let g = 0; g < string.length; g++) {
+    if (string[g] === 'B') {
+      count += 1
+    }
+  }
+  return count
+}
+console.log(countBs('baBeByBoBUbbbBBBb'))
+
 // 3) function countChar that behaves like countBs expect it takes a second argument that indicates the character that is to be  counted
+let counter = j, k
+counter = 0
+function countChar (string, character) {
+}
+
 // 4) function to generate the first n fibonacci numbers (fib=sum of the first 2 previous numbers)
 function fibonacci (n) {
   const fibonacci = [0, 1]
